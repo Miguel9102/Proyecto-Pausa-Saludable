@@ -1,0 +1,406 @@
+@import url(https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200;1,300;1,500;1,600&family=Ubuntu:ital,wght@0,400;1,300;1,500;1,700&display=swap);
+
+/*
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif; 
+**/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 1440px;
+    height: 1024px;
+    margin: auto;
+}
+
+/*  HEADER HOME  **/
+header{
+    border: 1px solid black;
+}
+
+.logo{
+    width: 124px;
+    height: 124px;
+    border-radius: 50px;
+    position: relative;
+}
+
+
+.navBar{
+    position: absolute;
+    top: 52px;
+    margin-left: 270px; 
+    list-style-type: none; 
+    }
+
+li.punto{
+    float: left;
+    margin-right: 95px;
+}
+
+.navegacion{
+    font-size: 20px;
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    font-weight: 500;
+    text-decoration: none; 
+    text-decoration-color: none;
+    color: black;
+}
+
+/* FIN HEADER HOME **/
+
+/* MAIN HOME **/
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.portada{
+    width: 1440px;
+    height: 378px;
+    object-fit: cover;
+}
+
+.tituloPortada{
+    font-size: 64px;
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    font-weight: 300;
+    position: absolute;
+    top: 20px;
+    left: 413px;
+}
+
+.home{
+    font-size: 32px;
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.homeIngredientes{
+    font-size: 32px;
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+    margin: 23px;
+}
+
+.dimension{
+    width: 250px;
+    height: 119px;
+    border: 1px solid black;
+    background-color: #D4FA84;
+    border-radius: 10px;
+}
+
+.dulces{
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    font-weight: 200;
+}
+
+.catalogo{
+    font-size: 16px;
+    margin: 19px 0;
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    font-weight: 500; 
+    list-style-type: none;
+}
+
+.ingredientes{
+    font-size: 20px;
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: 9px;
+}
+.imgIngredientes{
+    width: 170px;
+    height: 100px;
+}
+/* FIN MAIN HOME **/
+
+/* FOOTER**/
+footer{
+    background-color: #D4FA84;
+    margin-top: 30px;
+}
+
+.tituloRedes{
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    
+}
+
+.redes{
+    width: 36px;
+    height: 36px;
+    
+}
+
+.redBar{
+    list-style-type: none;
+}
+
+
+.tituloContacto{
+    font-size: 24px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.contacto{
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    margin-left: 20px;
+}
+/* FIN FOOTER **/
+
+/* HEADER **/
+header.color{
+    border: 1px solid black;
+    background-color: #D4FA84;
+}
+/* FIN HEADER**/
+
+/* MAIN PRODUCTOS**/
+.tituloProductos{
+    font-size: 48px;
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 21px;
+}
+
+.productos{
+    font-size: 24px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    border: 1px solid black;
+    background-color: #D4FA84;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.productos.carrotCake{
+    width: 140px;
+    height: 30px;
+}
+
+.productos.trufas{
+    width: 318px;
+    height: 30px;
+}
+
+.productos.muffins{
+    width: 90px;
+    height: 30px;
+}
+
+.productos.cookies{
+    width: 90px;
+    height: 30px;
+}
+
+.productos.brownie{
+    width: 210px;
+    height: 30px;
+}
+
+.productos.cereal{
+    width: 205px;
+    height: 30px;
+}
+
+.imgProductos{
+    width: 250px;
+    height: 280px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+/* FIN MAIN PRODUCTOS**/
+
+/* MAIN ACERCA DE MI**/
+.tituloAcerca{
+    font-size: 36px;
+    font-family: 'Josefin Sans' , sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    color: #628B0A;
+    margin-top: 14px;
+    margin-bottom: 37px;
+    margin-left: 60px;
+}
+
+.contenedorAcerca1{
+    width: 1440px;
+    height: 250px;
+    position: relative;
+    display: inline-block;
+}
+
+.acerca{
+    font-size: 20px;
+    font-family: 'Ubuntu' , sans-serif;
+    font-weight: 400;
+    width: 600px;
+    height: 207px;
+    left: 60px;
+    top: 33px;
+    position: absolute;
+}
+
+.imgAcerca1{
+    width: 600px;
+    height: 250px;
+    object-fit: cover;
+    position: absolute;
+    right: 60px;
+    top: 0;
+}
+
+.contenedorAcerca2{
+    width: 1440px;
+    height: 250px;
+    position: relative;
+    display: inline-block;
+}
+
+.imgAcerca2{
+    width: 600px;
+    height: 250px;
+    object-fit: cover;
+    position: relative;
+    left: 60px;
+    top: 32px;
+}
+
+.acercaDeMi{
+    font-size: 20px;
+    font-family: 'Ubuntu' , sans-serif;
+    font-weight: 400;
+    width: 600px;
+    height: 138px;
+    right: 60px;
+    top: 92px;
+    position: absolute;
+}
+
+.info{
+    font-size: 24px;
+    font-family: 'Ubuntu' , sans-serif;
+    font-weight: 700;
+    margin-top: 52px;
+    margin-left: 198px;
+}
+
+.infoImportante{
+    width: 1044px;
+    height: 115px;
+    font-size: 20px;
+    font-family: 'Ubuntu' , sans-serif;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-left: 198px;
+}
+/* FIN MAIN ACERCADEMI**/
+
+/*MAIN REGALOS**/
+.tituloRegalos{
+    font-size: 36px;
+    font-family: 'Josefin Sans' , sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    margin: 20px 0;
+    color: #628B0A;
+}
+
+.imgRegalos{
+    width: 280px;
+    height: 255px;
+}
+
+.textoRegalo{
+    font-size: 24px;
+    font-family: 'Josefin Sans' , sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 6px;
+}
+
+.regalos{
+    margin-bottom: 49px;
+}
+/* FIN MAIN REGALOS**/
+
+/* MAING CONTACTANOS**/
+.contactanos{
+    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    color: #628B0A;
+    margin-top: 14px;
+    margin-left: 555px;
+}
+
+.formContacto{
+    width: 661px;
+    height: 675px;
+    background-color: #D4FA84;
+    margin: auto;
+    margin: 38px 389px;
+}
+
+.controlText{
+    width: 611px;
+    height: 53px;
+    background-color: #ECFFC3;
+    margin: 45px 25px 0 25px;
+    font-size: 32px;
+    font-family: 'Josefin Sans' , sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    
+}
+
+textarea{
+    width: 611px;
+    height: 392px;
+    background-color: #ECFFC3;
+    margin: 45px 25px 0 25px;
+    font-size: 32px;
+    font-family: 'Josefin Sans' , sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    resize: none;
+}
+
+
+.enviar{
+    font-size: 24px;
+    font-family: 'Josefin Sans' , sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    margin-left: 25px;
+}
