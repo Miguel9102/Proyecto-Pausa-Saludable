@@ -11,38 +11,76 @@ font-family: 'Ubuntu', sans-serif;
     box-sizing: border-box;
 }
 
-body{
-    width: 1440px;
-    height: 1024px;
-    margin: auto;
+
+
+
+.homeContainer{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 3;
+    grid-template-areas: 
+    'header' 
+    'main' 
+    'footer';
+    justify-items: center;
 }
 
-/*  HEADER HOME  **/
-header{
-    border: 1px solid black;
+/*INICIO HEADER**/
+
+.homeContainer header{
+    width: 1440px;
+    grid-area: header;
+    display: flex;
+}
+
+.homeContainer header nav{
+    width: 100vw;
+    height: 124px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navBar{
+    width: 1317px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    border-top: 2px  solid black;
+    border-bottom: 2px  solid black;
 }
 
 .logo{
     width: 124px;
-    height: 124px;
     border-radius: 50px;
-    position: relative;
+    animation-name: mover;
+    animation-duration: 2s;  
 }
 
+.btnMovil{
+    width: 36px;
+    display: none;
+}
 
-.navBar{
-    position: absolute;
-    top: 52px;
-    margin-left: 270px; 
-    list-style-type: none; 
+@keyframes mover{
+    100%{
+        transform: rotatey(360deg);
     }
-
-li.punto{
-    float: left;
-    margin-right: 95px;
 }
 
-.navegacion{
+.navBar li{
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.navBar li:hover{
+    background-color: #c8dd9c;
+    transition: .4s;
+}
+
+.navBar li a{
     font-size: 20px;
     font-family: 'Josefin Sans';
     font-style: italic;
@@ -51,23 +89,28 @@ li.punto{
     text-decoration-color: none;
     color: black;
 }
+/*FIN HEADER**/
 
-/* FIN HEADER HOME **/
-
-/* MAIN HOME **/
-.contenedor{
-    position: relative;
-    display: inline-block;
-    text-align: center;
+/*INICIO MAIN HOME**/
+.homeContainer main{
+    grid-area: main;
+    width: 1440px;
 }
 
-.portada{
+.contenedor{
+    width: 1440px;
+    height: 378px;
+    position: relative;
+}
+
+.contenedor img{
     width: 1440px;
     height: 378px;
     object-fit: cover;
+    opacity: 90%;
 }
 
-.tituloPortada{
+.contenedor h1{
     font-size: 64px;
     font-family: 'Josefin Sans';
     font-style: italic;
@@ -77,91 +120,141 @@ li.punto{
     left: 413px;
 }
 
-.home{
+/*CATALOGO**/
+.catalogo{
+    text-align: center;
     font-size: 32px;
     font-family: 'Josefin Sans';
     font-style: italic;
     font-weight: 600;
-    text-align: center;
-    margin: 15px 0;
+    margin: 23px 0;
 }
 
-.homeIngredientes{
-    font-size: 32px;
-    font-family: 'Josefin Sans';
-    font-style: italic;
-    font-weight: 600;
-    text-align: center;
-    margin: 23px;
+.flexCatalogo{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
 }
 
 .dimension{
+    display: flex;
     width: 250px;
     height: 119px;
+    border-radius: 30px;
+    flex-direction: column;
     border: 1px solid black;
-    background-color: #D4FA84;
-    border-radius: 10px;
+    background-image: linear-gradient(to right,#98c23f, #D4FA84);
 }
 
-.dulces{
+.dimension h4{
     margin-top: 10px;
+    margin-left: 14px;
+    margin-bottom: 5px;
     font-size: 20px;
     font-family: 'Josefin Sans';
     font-style: italic;
-    font-weight: 200;
+    font-weight: 300;
 }
 
-.catalogo{
+.dimension ul{
     font-size: 16px;
-    margin: 19px 0;
     font-family: 'Josefin Sans';
     font-style: italic;
     font-weight: 500; 
     list-style-type: none;
+    margin-left: 14px;
+
 }
 
-.ingredientes{
+.dimension ul li{
+    margin-bottom: 15px;
+}
+
+/*INGREDIENTES**/
+.tituloIngredientes{
+    font-size: 32px;
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+    margin: 28px;
+}
+
+.boxIngredientes{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+
+
+.ingredientes h4{
     font-size: 20px;
     font-family: 'Josefin Sans';
     font-style: italic;
     font-weight: 500;
     margin-bottom: 9px;
+    text-align: center;
 }
-.imgIngredientes{
+
+.ingredientes img{
     width: 170px;
     height: 100px;
 }
-/* FIN MAIN HOME **/
+/*FIN MAIN HOME**/
 
-/* FOOTER**/
-footer{
-    background-color: #D4FA84;
-    margin-top: 30px;
+
+/*INICIO FOOTER**/
+.homeContainer footer{
+    width: 1440px;
+    grid-area: footer;
 }
 
-.tituloRedes{
+.boxFooter{
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to right,#98c23f, #D4FA84);
+    height: 95px;
+}
+
+.redes h3{
     font-size: 20px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
-    
+    text-align: center;
+    margin-bottom: 7px;
 }
 
 .redes{
-    width: 36px;
-    height: 36px;
-    
+    margin: 15px 27px;
+    width: 223px;
+
 }
 
 .redBar{
+    display: flex;
     list-style-type: none;
+    justify-content: space-between;
 }
 
+.redBar li a img{
+    width: 36px;
+}
+
+.boxContacto{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    width: 325px;
+    height: 81px;
+}
 
 .tituloContacto{
     font-size: 24px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     text-decoration: underline;
+    margin: 7px 10px;
 }
 
 .contacto{
@@ -169,18 +262,18 @@ footer{
     font-family: 'Ubuntu', sans-serif;
     font-style: italic;
     font-weight: 300;
-    margin-left: 20px;
+    list-style-type: none;
 }
-/* FIN FOOTER **/
+/*FIN FOOTER**/
 
-/* HEADER **/
-header.color{
-    border: 1px solid black;
-    background-color: #D4FA84;
+/*INICIO HEADER COLOR**/
+.headerColor{
+    border-bottom: 1px solid black;
+    background-image: linear-gradient(to right,#D4FA84, #98c23f);
 }
-/* FIN HEADER**/
+/*FIN FOOTER COLOR**/
 
-/* MAIN PRODUCTOS**/
+/*INICIO MAIN PRODUCTOS**/
 .tituloProductos{
     font-size: 48px;
     font-family: 'Josefin Sans';
@@ -190,7 +283,77 @@ header.color{
     margin-top: 21px;
 }
 
-.productos{
+.containerProductos{
+    display: grid;
+    grid-template-areas: 
+    'box1 box2 box3'
+    'box4 box5 box6';
+    justify-content: space-between;
+    padding: 0 172px;
+    margin: 22px 0;
+}
+
+.box1{
+    grid-area: box1;
+    margin-bottom: 32px;
+}
+.box2{
+    grid-area: box2;
+    margin-bottom: 32px
+}
+.box3{
+    grid-area: box3;
+    margin-bottom: 32px
+}
+.box4{
+    grid-area: box4;
+}
+.box5{
+    grid-area: box5;
+}
+.box6{
+    grid-area: box6;
+}
+
+.carrotCake{
+    width: 140px;
+    height: 25px;
+}
+
+.trufas{
+    width: 318px;
+    height: 25px;
+}
+
+.muffins{
+    width: 90px;
+    height: 25px;
+}
+
+.cookies{
+    width: 90px;
+    height: 25px;
+}
+
+.brownie{
+    width: 210px;
+    height: 25px;
+}
+
+.cereal{
+    width: 205px;
+    height: 25px;
+}
+
+.boxProductos{
+    width: 250px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boxProductos h2{
     font-size: 24px;
     font-family: 'Josefin Sans', sans-serif;
     font-style: italic;
@@ -199,45 +362,21 @@ header.color{
     background-color: #D4FA84;
     border-radius: 10px;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
 
-.productos.carrotCake{
-    width: 140px;
-    height: 30px;
-}
-
-.productos.trufas{
-    width: 318px;
-    height: 30px;
-}
-
-.productos.muffins{
-    width: 90px;
-    height: 30px;
-}
-
-.productos.cookies{
-    width: 90px;
-    height: 30px;
-}
-
-.productos.brownie{
-    width: 210px;
-    height: 30px;
-}
-
-.productos.cereal{
-    width: 205px;
-    height: 30px;
-}
-
-.imgProductos{
+.boxProductos img{
     width: 250px;
     height: 280px;
     border-radius: 20px;
     object-fit: cover;
+    transition: transform 1s
 }
-/* FIN MAIN PRODUCTOS**/
+.boxProductos img:hover{
+    transform: scale(1.2,1.1);
+}
+/*FIN MAIN PRODUCTOS**/
 
 /* MAIN ACERCA DE MI**/
 .tituloAcerca{
@@ -351,9 +490,37 @@ header.color{
 .regalos{
     margin-bottom: 49px;
 }
+
+/*MAIN REGALOS**/
+.tituloRegalos{
+    font-size: 36px;
+    font-family: 'Josefin Sans' , sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    margin: 20px 0;
+    color: #628B0A;
+}
+
+.imgRegalos{
+    width: 280px;
+    height: 255px;
+}
+
+.textoRegalo{
+    font-size: 24px;
+    font-family: 'Josefin Sans' , sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 6px;
+}
+
+.regalos{
+    margin-bottom: 49px;
+}
 /* FIN MAIN REGALOS**/
 
-/* MAING CONTACTANOS**/
+/* MAIN CONTACTANOS**/
 .contactanos{
     font-size: 40px;
     font-family: 'Josefin Sans', sans-serif;
@@ -403,4 +570,144 @@ textarea{
     font-weight: 300;
     font-style: italic;
     margin-left: 25px;
+}
+
+@media screen and (max-width: 575px) {
+
+    .homeContainer header nav{
+        width: 100vw;
+        height: 38px;
+    }
+
+    .logo{
+        width: 36px;
+    }
+
+    .btnMovil{
+        display: block;
+        width: 36px;
+
+    }
+    .navBar{
+        display: none;
+    }
+
+    .headerColor{
+        width: 100vw;
+        border-bottom: none;
+        background-image: linear-gradient(to right,#D4FA84, #98c23f);
+    }
+
+
+    .homeContainer main{
+        height: calc(100% - 121px);
+    }
+
+    .contenedor{
+        width: 100vw;
+        height: 195px;
+    }
+
+    .contenedor img{
+        width: 100vw;
+        height: 195px;
+    }
+
+    .contenedor h1{
+        text-align: center;
+        width: 100%;
+        font-size: 20px;
+        top: 13px;
+        left: 0;
+    }
+
+    .catalogo{
+        width: 100vw;
+        text-align: center;
+        font-size: 16px;
+        margin: 13px 0;
+    }
+    
+    .flexCatalogo{
+        width: 100vw;
+        display: flex;
+
+    }
+    
+    .none{
+        display: none;
+    }
+    
+    .dimension ul li{
+        margin-bottom: 15px;
+    }
+    
+    .tituloIngredientes{
+        width: 100vw;
+        text-align: center;
+        font-size: 16px;
+        margin: 13px 0;
+    }
+
+    .boxIngredientes{
+        width: 100vw;
+    }
+
+    .boxFooter{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        height: 85px;
+    }
+
+    .redes{
+        width: 100vw;
+        height: 85px;
+    }
+
+    .redBar{
+        width: 100vw;
+        justify-content: space-around;
+    }
+
+    .redBar li a img{
+        width: 60px;
+    }
+
+
+    .tituloProductos{
+        width: 100vw;
+        font-size: 22px;
+        font-family: 'Josefin Sans';
+        font-style: italic;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 21px;
+    }
+
+    .containerProductos{
+        width: 100vw;
+        justify-content: center;
+        margin: 22px 0 44px 0;
+    }
+    
+    .box1, .box4{
+        width: 156px;
+        height: 206px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box1 h2, .box4 h2{
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        height: 15px;
+        width: 88px;
+    }
+    .box1 img, .box4 img{
+        width: 156px;
+        height: 175px;
+        border-radius: 20px;
+    }
 }

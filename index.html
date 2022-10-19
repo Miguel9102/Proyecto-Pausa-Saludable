@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,55 +8,59 @@
         <title>Home</title>
         <link rel="stylesheet" href="./css/style.css">
     </head>
+
     <body>
 
-        <div class="gridContainer">
+        <div class="homeContainer">
             <header>
-                <div>
-                    <a href="./index.html"><img src="./assets/img/logo.jpeg" class="logo" alt="Logo"></a>
-                </div>
                 <nav>
+                    <div>
+                        <a href="./index.html"><img class="logo" src="./assets/img/logo.jpeg" alt="Logo"></a>
+                    </div>
                     <ul class="navBar">
-                        <li class="punto"><a class="navegacion" href="./index.html">HOME</a></li>
-                        <li class="punto"><a class="navegacion" href="./pages/productos.html">PRODUCTOS</a></li>
-                        <li class="punto"><a class="navegacion" href="./pages/acercademi.html">ACERCA DE MI</a></li>
-                        <li class="punto"><a class="navegacion" href="./pages/regalos.html">REGALOS</a></li>
-                        <li class="punto"><a class="navegacion" href="./pages/contactanos.html">CONTACTANOS</a></li>
+                        <li><a href="./index.html">HOME</a></li>
+                        <li><a href="./pages/productos.html">PRODUCTOS</a></li>
+                        <li><a href="./pages/acercademi.html">ACERCA DE MI</a></li>
+                        <li><a href="./pages/regalos.html">REGALOS</a></li>
+                        <li><a href="./pages/contactanos.html">CONTACTANOS</a></li>
                     </ul>
+                    <img class="btnMovil" src="./assets/img/menu.png" alt="menu desplegable">
                 </nav>
             </header>
             <main>
+
                 <section class="contenedor">
-                    <img src="./assets/img/portada.jpg" class="portada" alt="Portada">
-                    <h1 class="tituloPortada">PAUSA SALUDABLE</h1>
+                    <img src="./assets/img/portada.jpg" alt="Portada">
+                    <h1>PAUSA SALUDABLE</h1>
                 </section>
+
                 <section>
-                    <h2 class="home">CATALOGO</h2>
-                    <section>
+                    <h2 class="catalogo">CATALOGO</h2>
+                    <section class="flexCatalogo">
                         <div class="dimension">
-                            <h4 class="dulces">COOKIES:</h4>
-                            <ul class="catalogo">
+                            <h4>COOKIES:</h4>
+                            <ul>
                                 <li>Avena y nuez.</li>
                                 <li>Avena y mantequilla de maní.</li>
                             </ul>
                         </div>
-                        <div class="dimension">
-                            <h4 class="dulces">MUFFINS:</h4>
-                            <ul class="catalogo">
+                        <div class="dimension none">
+                            <h4>MUFFINS:</h4>
+                            <ul>
                                 <li>Vainilla, avena y chips de chocolate.</li>
-                                <li>Cholate y corazon de dulce de leche.</li>
+                                <li>Chocolate y corazón de dulce de leche.</li>
                             </ul>
                         </div>
-                        <div class="dimension">
-                            <h4 class="dulces">CEREALES:</h4>
-                            <ul class="catalogo">
+                        <div class="dimension none">
+                            <h4>CEREALES:</h4>
+                            <ul>
                                 <li>Granola.</li>
                                 <li>Barritas de cereal.</li>
                             </ul>
                         </div>
-                        <div class="dimension">
-                            <h4 class="dulces">CUADRADITOS DE:</h4>
-                            <ul class="catalogo">
+                        <div class="dimension none">
+                            <h4>CUADRADITOS DE:</h4>
+                            <ul>
                                 <li>Ricota.</li>
                                 <li>Brownie sin harina.</li>
                                 <li>Carrot cake.</li>
@@ -63,52 +68,56 @@
                         </div>
                     </section>
                 </section>
+
                 <section>
-                    <h2 class="homeIngredientes">INGREDIENTES</h2>
-                    <section>
-                        <div>
-                            <h4 class="ingredientes">Avena</h4>
-                            <img src="./assets/img/ingredientes/avena.jpg" class="imgIngredientes" alt="avena">
+                    <h2 class="tituloIngredientes">INGREDIENTES</h2>
+                    <section class="boxIngredientes">
+                        <div class="ingredientes">
+                            <h4>Avena</h4>
+                            <img src="./assets/img/ingredientes/avena.jpg" alt="avena">
                         </div>
-                        <div>
-                            <h4 class="ingredientes">Harina de avena</h4>
-                            <img src="./assets/img/ingredientes/harina-de-avena.jpg" class="imgIngredientes" alt="harinaDeAvena">
+                        <div class="ingredientes none">
+                            <h4>Harina de avena</h4>
+                            <img src="./assets/img/ingredientes/harina-de-avena.jpg" alt="harinaDeAvena">
                         </div>
-                        <div>
-                            <h4 class="ingredientes">Azucar mascabo</h4>
-                            <img src="./assets/img/ingredientes/azucar-mascabo.jpg" class="imgIngredientes" alt="azucarMascabo">
+                        <div class="ingredientes none">
+                            <h4>Azucar mascabo</h4>
+                            <img src="./assets/img/ingredientes/azucar-mascabo.jpg" alt="azucarMascabo">
                         </div>
-                        <div>
-                            <h4 class="ingredientes">Azucar orgánica</h4>
-                            <img src="./assets/img/ingredientes/azucar-organica.jpg" class="imgIngredientes" alt="azucarOrgánica">
+                        <div class="ingredientes none">
+                            <h4>Azucar orgánica</h4>
+                            <img src="./assets/img/ingredientes/azucar-organica.jpg" alt="azucarOrgánica">
                         </div>
-                        <div>
+                        <div class="ingredientes none">
                             <h4>Endulzantes naturales</h4>
-                            <img src="./assets/img/ingredientes/endulzantes-naturales.jpg" class="imgIngredientes" alt="endulzantesNaturales">
+                            <img src="./assets/img/ingredientes/endulzantes-naturales.jpg" alt="endulzantesNaturales">
                         </div>
                     </section>
                 </section>
+
             </main>
             <footer>
-                <section>
-                    <div>
-                        <h3 class="tituloRedes">Seguínos</h3>
-                        <ul>
-                            <li class="redBar"><a href=""><img class="redes" src="./assets/img/redes/instagram-24px.png" alt="Instagram"></a></li>
-                            <li class="redBar"><a href=""><img class="redes" src="./assets/img/redes/facebook-24px.png" alt="Facebook"></a></li>
-                            <li class="redBar"><a href=""><img class="redes" src="./assets/img/redes/twitter-24px.png" alt="Twitter"></a></li>
+
+                <section class="boxFooter">
+                    <div class="redes">
+                        <h3 class="none">¡Seguínos!</h3>
+                        <ul class="redBar">
+                            <li><a href=""><img src="./assets/img/redes/instagram-24px.png" alt="Instagram"></a></li>
+                            <li><a href=""><img src="./assets/img/redes/facebook-24px.png" alt="Facebook"></a></li>
+                            <li><a href=""><img src="./assets/img/redes/twitter-24px.png" alt="Twitter"></a></li>
                         </ul>
                     </div>
-                    <div>
+                    <div class="boxContacto none">
                         <h3 class="tituloContacto">Contacto:</h3>
-                        <ul>
-                            <li class="contacto">Dirección: pausasaludable@gmail.com</li>
-                            <li class="contacto">Telefono: 2995-748850</li>
+                        <ul class="contacto">
+                            <li>Dirección: pausasaludable@gmail.com</li>
+                            <li>Telefono: 2995-748850</li>
                         </ul>
                     </div>
                 </section>
+
             </footer>
         </div>
-
+        
     </body>
 </html>
