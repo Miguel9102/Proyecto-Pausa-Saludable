@@ -1,0 +1,128 @@
+@media screen and (max-width: 575px) {
+    
+    .homecontainer{
+        header{
+            width: 575px;
+            grid-area: header;
+            display: flex;
+
+            nav{
+                width: 100vw;
+                height: 38px;
+                align-items: flex-start;
+                justify-content: space-between;
+            }
+        }
+    }
+    .logo{
+        width:36px;
+        height: 36px;
+    }
+    .btnMovil{
+        display: block;
+        width:36px;
+        height: 36px;
+    }
+    .navBar{
+        display: none;
+    }
+    .headerColor{
+        border-bottom: none;
+        background-image: linear-gradient(to right,#D4FA84, #98c23f);
+    }
+
+    .homeContainer main{
+        height: calc(100% - 121px);
+    }
+    .contenedor{
+        @include props-width (100vw,195px);
+        h1{
+            text-align: center;
+            width: 100%;
+            font-size: 20px;
+            top: 13px;
+            left: 0;
+        }
+    }
+    .catalogo{
+        width: 100vw;
+        text-align: center;
+        font-size: 16px;
+        margin: 13px 0;
+    }
+    .flexCatalogo{
+        width: 100vw;
+        display: flex;
+    }
+    .none{
+        display: none;
+    }
+    .dimension ul li{
+        margin-bottom: 15px;
+    }
+    .tituloIngredientes{
+        width: 100vw;
+        text-align: center;
+        font-size: 16px;
+        margin: 13px 0;
+    }
+
+    .boxIngredientes{
+        width: 100vw;
+    }
+    .boxFooter{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        height: 85px;
+    }
+
+    .redes{
+        width: 100vw;
+        height: 85px;
+    }
+
+    .redBar{
+        width: 100vw;
+        justify-content: space-around;
+        li a img{
+            width: 60px;
+        }
+    }
+    .tituloProductos{
+        width: 100vw;
+        font-size: 22px;
+        font-family: 'Josefin Sans';
+        font-style: italic;
+        font-weight: 300;
+        text-align: center;
+        margin-top: 21px;
+    }
+
+    .containerProductos{
+        width: 100vw;
+        justify-content: center;
+        margin: 22px 0 44px 0;
+    }
+    
+    .box1, .box4{
+        width: 156px;
+        height: 206px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box1 h2, .box4 h2{
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        height: 15px;
+        width: 88px;
+    }
+    .box1 img, .box4 img{
+        width: 156px;
+        height: 175px;
+        border-radius: 20px;
+    }
+}
+

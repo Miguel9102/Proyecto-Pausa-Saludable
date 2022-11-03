@@ -1,0 +1,34 @@
+/*MAIN CONTACTO**/
+.contactanos{
+    @include props-letter (40px,'Josefin Sans',italic,300);
+    color: $background-secundario;
+    text-align: center;
+    margin-top: 14px;
+}
+.formContacto{
+    background-color: $background-principal;
+    @include props-width (661px,675px);
+    margin: 38px 389px;
+    .controlText{
+        @include props-letter (32px,'Josefin Sans',italic,300);
+        @include props-width (611px,53px);
+        background-color: #ECFFC3;
+        margin: 45px 25px 0 25px;
+    }
+    textarea{
+        @include props-width (611px,392px);
+        background-color: #ECFFC3;
+        @include props-letter (32px,'Josefin Sans',italic,300);
+        margin: 45px 25px 0 25px;
+        resize: none;
+    }
+    .enviar{
+        font-size: 24px;
+        font-family: 'Josefin Sans' , sans-serif;
+        font-weight: 300;
+        font-style: italic;
+        margin-left: 25px;
+    }
+}
+/*FIN CONTACTO**/
+

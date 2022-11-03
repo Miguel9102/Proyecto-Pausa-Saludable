@@ -1,0 +1,8 @@
+.homeContainer{
+    display: grid;
+    grid-template-areas: 
+    'header' 
+    'main' 
+    'footer';
+    justify-items: center;
+}

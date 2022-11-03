@@ -1,0 +1,63 @@
+.homeContainer header{
+    width: 1440px;
+    grid-area: header;
+    display: flex;
+
+    nav{    
+        width: 100vw;
+        height: 124px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.headerColor{
+    border-bottom: 1px solid black;
+    background-image: linear-gradient(to right,$background-principal, #98c23f);
+}
+
+.navBar{
+    width: 1317px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    border-top: 2px  solid black;
+    border-bottom: 2px  solid black;
+}
+
+.logo{
+    width: 124px;
+    border-radius: 50px;
+    animation-name: mover;
+    animation-duration: 2s;  
+}
+
+@keyframes mover{
+    100%{
+        transform: rotatey(360deg);
+    }
+}
+
+.btnMovil{
+    width: 36px;
+    display: none;
+}
+
+.navBar li{
+    padding: 7px;
+    border-radius: 5px;
+    a{
+        @include props-letter (20px,'Josefin Sans',italic,500);
+        text-decoration: none; 
+        text-decoration-color: none;
+        color: black;
+    }
+    &:hover{
+        background-color: #c8dd9c;
+    transition: .4s;
+    }
+}
+

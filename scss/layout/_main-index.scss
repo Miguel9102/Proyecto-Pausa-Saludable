@@ -1,0 +1,83 @@
+/*INICIO MAIN HOME**/
+.homeContainer main{
+    grid-area: main;
+    width: 1440px;
+}
+
+.contenedor{
+    width: 1440px;
+    height: 378px;
+    position: relative;
+    img{
+        @extend .contenedor;
+        position: none;
+        object-fit: cover;
+        opacity: 90%;   
+    }
+    h1{
+        @include props-letter (64px,'Josefin Sans',italic,300);
+        position: absolute;
+        top: 20px;
+        left:413px;
+    }
+}
+/*CATALOGO**/
+.catalogo{
+    @include props-letter (32px,'Josefin Sans',italic,600);
+    text-align: center;
+    margin: 23px 0;
+}
+
+.flexCatalogo{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.dimension{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 119px;
+    border-radius: 30px;
+    border: 1px solid black;
+    background-image: linear-gradient(to right,#98c23f, $background-principal);
+    h4{
+        margin-top: 10px;
+        margin-left: 14px;
+        margin-bottom: 5px;
+        @include props-letter (20px,'Josefin Sans',italic,300);
+    }
+    ul{
+        @include props-letter (16px,'Josefin Sans',italic,500);
+        list-style: none;
+        margin-left: 14px;
+        li{
+            margin-bottom: 15px;
+        }
+    }
+}
+
+/*INGREDIENTES**/
+.tituloIngredientes{
+    @include props-letter (32px,'Josefin Sans',italic,600);
+    text-align: center;
+    margin: 28px;
+}
+
+.boxIngredientes{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    div{
+        h4{
+            @include props-letter (20px,'Josefin Sans',italic,500);
+            margin-bottom: 9px;
+            text-align: center;
+        }
+        img{
+            width: 170px;
+            height: 100px;
+        }
+    }
+}
+/*FIN MAIN HOME**/
